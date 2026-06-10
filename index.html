@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/root.css">
@@ -15,9 +14,8 @@
     <!--           1. GOOGLE FONTS                  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Exemplo carregando a fonte Roboto (mude para a que preferir) -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
 
     <!--            2. FONT AWESOME                 -->
@@ -34,8 +32,10 @@
 <body>
 
     <header class="cabecalho fixo" id="inicio">
-        <img src="logo.png" alt="Logo do site" class="logo">
-        <h1 class="titulo">Tornando seu sonho em realidade</h1>
+        <div class="logo">
+            <img src="logo.png" alt="Logo do site">
+            <h1 class="titulo">Tornando seu sonho em realidade</h1>
+        </div>
         <nav class="navegacao">
             <a href="#projetos" class="btn-menu">
                 <i class="fa-solid fa-list-check"></i>
@@ -60,14 +60,18 @@
                 <img src="#" alt="Cabeleleira">
                 <h2 class="sub-titulo">Cabeleleira Leila</h2>
                 <h3>Salão de beleza</h3>
-                <p class="descricao-projeto">Você fala <span>Beleza</span>, e eu respondo <span>Beleza</span></p>
+                <p class="descricao-projeto">
+                    Você fala <span>Beleza</span>, e eu respondo <span>Beleza</span>
+                </p>
                 <a href="#" class="btn-projeto">Visitar</a>
             </div>
             <div class="trabalhos">
                 <img src="#" alt="Restaurante">
                 <h2 class="sub-titulo">Contra Filé</h2>
                 <h3>Restaurante vegano</h3>
-                <p class="descricao-projeto">Aqui não comemos carne, somos <span>Contra Filé</span>
+                <p class="descricao-projeto">
+                    Aqui não comemos carne, somos <span>Contra Filé</span>
+                </p>
             </div>
             <div class="trabalhos">
                 <img src="#" alt="Casa de Construção">
@@ -83,7 +87,7 @@
                 <a href="#" class="btn-projeto">Visitar</a>
             </div>
         </section>
-        <section class="clentes" id="clientes">
+        <section class="clientes" id="clientes">
             <div class="depoimentos">
                 <div class="card">
                     <img src="#" alt="Foto de perfil" class="foto">

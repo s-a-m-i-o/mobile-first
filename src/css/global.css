@@ -1,0 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--cor-texto);
+    font-family: var(--textos);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--principal);
+    text-align: center;
+    font-size: clamp(26px, 4vw, 48px);
+}
+
+h2 {
+    color: var(--destaque);
+}
