@@ -73,7 +73,7 @@ header img {
         align-items: center;
         justify-content: space-evenly;
         gap: .5rem;
-        background-color: var(--fundo-claro) ;
+        border: 1px solid var(--principal);
         padding: 30px;
 }
 
@@ -84,7 +84,7 @@ header img {
         flex-direction: row;
         width: 300px;
         word-spacing:5px;
-        background-color: var(--principal);
-        border: 1px solid var(--fundo);
+        border: 1px solid var(--principal);
+        padding: 20px 30px;
     }
 }
