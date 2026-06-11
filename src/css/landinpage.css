@@ -20,25 +20,6 @@ header img {
     justify-content: center;
 }
 
-@media (min-width: 768px) {
-
-    header {
-        padding: 5px 10px;
-        background-color: var(--fundo);
-    }
-
-    .cabecalho .logo {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .logo::after {
-        content: " ";
-        width: 100px;
-        height: 100px;
-    }
-}
-
 .cabecalho .navegacao {
     display: flex;
     flex-direction: column;
@@ -65,26 +46,22 @@ header img {
     box-shadow: 0 3px 9px var(--principal);
 }
 
-@media (min-width: 768px) {
-
-    .cabecalho .navegacao {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: .5rem;
-        border: 1px solid var(--principal);
-        padding: 30px;
+.cabecalho .descricao-header {
+    text-align: center;
+    font-family: var(--texto-diferente);
+    font-size: 2.2rem;
+    color: var(--fundo);
+    text-shadow: 0 0 10px var(--principal);
+    -webkit-text-stroke: .5px var(--cor-texto);
 }
 
-    .cabecalho .navegacao .btn-menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row;
-        width: 300px;
-        word-spacing:5px;
-        border: 1px solid var(--principal);
-        padding: 20px 30px;
-    }
+.cabecalho .btn-header {
+    background-color: var(--destaque);
+    padding: 10px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-texto);
+    border: 1px solid var(--principal);
+    border-radius: 5px;
+    animation: pulsar ease-in-out infinite 1s;
 }

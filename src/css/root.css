@@ -2,9 +2,10 @@
     --fundo: #0a0a0a; /*(preto quase puro) */
     --fundo-claro: #333333; /*(preto quase puro) */
     --principal: #6c63ff;  /*(roxo moderno)*/
-    --destaque: #ff6584;  /*(rosa/coral)*/
+    --destaque: #e02525;  /*(rosa/coral)*/
     --cor-texto: #f5f5f5; /*(branco suave)*/
 
     --titulos:"Playfair Display", serif;
     --textos:"Inter", sans-serif;
+    --texto-diferente: "Tangerine", cursive;
 }
