@@ -20,6 +20,10 @@ header img {
     justify-content: center;
 }
 
+.cabecalho .logo h1 {
+    font-size: clamp(2.2rem, 4vw, 6rem);
+}
+
 .cabecalho .navegacao {
     display: flex;
     flex-direction: column;
@@ -33,7 +37,7 @@ header img {
     border: 1px solid var(--principal);
     width: 100%;
     padding: 10px 30px;
-    color: var(--texto);
+    color: var(--cor-texto);
     text-align: center;
     word-spacing: 10px;
     font-size: 1.2rem;
@@ -49,7 +53,7 @@ header img {
 .cabecalho .descricao-header {
     text-align: center;
     font-family: var(--texto-diferente);
-    font-size: 2.2rem;
+    font-size: clamp(2.5rem, 8vw, 5rem);
     color: var(--fundo);
     text-shadow: 0 0 10px var(--principal);
     -webkit-text-stroke: .5px var(--cor-texto);
@@ -64,4 +68,179 @@ header img {
     border: 1px solid var(--principal);
     border-radius: 5px;
     animation: pulsar ease-in-out infinite 1s;
+}
+
+/* 
+    ==========================
+    *         PROJETOS       *
+    ========================== 
+ */
+
+.conteudo {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.projetos img {
+    width: 150px;
+    box-shadow: 0 0 17px var(--fundo);
+}
+
+.projetos .trabalhos {
+    border: 1px solid var(--principal);
+    background-color: var(--fundo-claro);
+    width: 350px;
+    min-width: 250px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    transition: transform .3s ease, box-shadow .4s ease ;
+}
+
+.trabalhos:hover {
+    transform: translate(15px, -3px);
+    box-shadow: -5px 3px 7px var(--principal);
+}
+
+.projetos .trabalhos .sub-titulo {
+    text-decoration:underline;
+    text-align: center;
+}
+
+.projetos .trabalhos h4 {
+    color:  var(--principal);
+}
+
+.projetos .trabalhos .descricao-projeto {
+    text-align: center;
+font-family: var(--titulos);
+}
+
+/* 
+    ==========================
+    *         CLIENTES       *
+    ========================== 
+ */
+
+.clientes .depoimentos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 15px;
+}
+
+.clientes .card {
+    border: 1px solid var(--destaque);
+    border-radius: 0px 20px 20px 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.clientes .card img {
+    width: 80px;
+    height:80px;
+}
+
+.clientes .card .nome {
+    color: var(--destaque);
+    padding: 10px;
+    font-family: var(--texto-diferente);
+    font-size: 3rem;
+}
+
+.clientes .card .descricao-cliente {
+    color: var(--principal);
+    padding: 10px;
+}
+
+/* 
+    ==========================
+    *         CONTATO        *
+    ========================== 
+ */
+
+.contato {
+    width: 100%;
+    border: 1px solid var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+form {
+    background-color: var(--principal);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 90%;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+form input:not(:last-child) {
+    width: 100%;
+}
+
+form input.btn-input {
+    border: 1px solid var(--fundo);
+    background-color: var(--destaque);
+    color: var(--cor-texto);
+    padding: 7px 10px;
+}
+
+/* 
+    ==========================
+    *         FOOTER       *
+    ========================== 
+ */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.descricao-rodape {
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--textos);
+}
+
+.redes i {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.fa-facebook {
+    color: blue;
+}
+.fa-instagram {
+    color: orangered;
+}
+.fa-whatsapp {
+    color: green;
 }
